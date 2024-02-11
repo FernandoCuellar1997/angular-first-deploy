@@ -1,0 +1,13 @@
+<div class="row">
+  <!-- Todo: Este div es para mostrar el listado -->
+  <div class="col">
+    <app-list [charactersList]="characters" (id)="deleteCharacter($event)"></app-list>
+  </div>
+
+  <!-- Todo: Este es para el formulario de agregar personajes -->
+  <div class="col">
+
+    <app-add-character (characterEmitt)="addCharacter($event)"></app-add-character>
+  </div>
+
+</div>
